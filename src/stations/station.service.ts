@@ -22,6 +22,7 @@ export const getStationData = async (): Promise<Station[]> => {
   if (response?.ok) {
     response = await response.json();
     const responseData = response["observations"]["data"];
+    
     const stationData: Station[] = mapResponse(responseData);
     return stationData;
   } else {
