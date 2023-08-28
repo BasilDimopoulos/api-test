@@ -16,13 +16,13 @@ export const getStationData = async (): Promise<Station[]> => {
   try {
     response = await fetch(url);
   } catch (err) {
-    throw new Error(`Error fetching data from ${url}:`);
+    throw new Error(`Error fetching data from ${url}: ${err}`);
   }
 
   if (response?.ok) {
     response = await response.json();
     const responseData = response["observations"]["data"];
-    
+
     const stationData: Station[] = mapResponse(responseData);
     return stationData;
   } else {
