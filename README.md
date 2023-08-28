@@ -9,7 +9,7 @@ npm run dev
 
 Application should be running at http://localhost:7000/
 
-## Running the application with DOCKER
+## Running the application with Docker
 ```
 docker build -t api-test .
 docker run -p 7000:7000 -it api-test 
