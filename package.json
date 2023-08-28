@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "postinstall": "tsc",
     "start" : "node src/index.js",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w",
