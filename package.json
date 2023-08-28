@@ -5,6 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "postinstall": "tsc",
+    "start" : "node src/index.js",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master",
     "test": "jest",
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts"
   },
