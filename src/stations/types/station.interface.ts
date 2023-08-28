@@ -1,5 +1,5 @@
 export interface Station {
-    id: number;
+  id: number;
   name: string;
   apparent_t: number;
   lat: number;
